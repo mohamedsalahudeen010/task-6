@@ -5,9 +5,14 @@ class movie{
         this.rating=rating;
         
     }
+    getPG(){
+        if(this.rating==undefined)
+        return this.rating="PG"
+    }
     
 }
-var instance= new movie("Casino Royale","Eon Productions","PG13");
+var movie1= new movie("Casino Royale","Eon Productions","PG13");
 
-console.log(instance.title);
-console.log(instance.rating);
+console.log(movie1.title);
+console.log(movie1.studio);
+console.log(movie1.rating);
